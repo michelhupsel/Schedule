@@ -1,0 +1,5 @@
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Entity\bin\Debug\Agenda.Entity.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Entity\bin\Debug\Agenda.Entity.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Entity\obj\Debug\Agenda.Entity.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Entity\obj\Debug\Agenda.Entity.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Entity\obj\Debug\Agenda.Entity.csprojResolveAssemblyReference.cache

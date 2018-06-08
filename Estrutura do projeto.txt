@@ -1,0 +1,174 @@
+
+
+<add key="connection" value="Server=192.168.15.99;Port=3306;Database=allpay;Uid=root2;Pwd=123;" />
+
+
+CAMADA  - AGENDA - INTERFACE GRAFICA
+CAMADA  - BLL  - REGRA DE NEGOCIO
+CAMADA  - DAL -   CAMADA DE ACESSO AO BANCO
+CAMADA  - ENTITY  - CAMADA DE OBJETO - SEU MODELO DE OBJETO
+PROJETO - WEB SERVICE - AGENDA
+
+
+
+CONSULTA AGENDA
+
+TELA - LOGIN
+TELA - PRINCIPAL
+TELA - CONSULTA / CADASTAR USUARIO
+
+
+Estuda sobre - interface,  herança, encapsulamento, sobrecarga, polimofismo
+
+Estudar sobre - Métodos privados - publicos - estaticos - internal
+
+em C#
+
+--------------- * Estrutura do projeto * ----------------------------------------------
+
+ Projeto - Estrutura: Windows form - C#
+ 
+ Agenda.Core
+  Infraestrutura  ->  service -> interface    = BLL
+  Infraestrutura  ->  repository -> interface = DAL
+ Agenda.Entity
+  Infraestrutura  ->  entity  = Objetos - Modelo de entidade
+ Agenda.View      ->  view    = Interface gráfica
+
+ Projeto - Estrutura: Web Service - C#
+ 
+ WebServiceContato
+ 
+ Métodos:
+     
+	 ConsultaUsuario(string login, string senha, string key)
+	
+	 CadatrarUsuario(string json, string key)
+	  O objeto será enviado via json para o ws e no ws será deserializado
+	
+	 AtualizarUsuario(string json,string key)
+	  O objeto será enviado via json para o ws e no ws será deserializado
+	 	  
+	 InativarUsuario(string idUsuario, string status, string usuarioLog)
+	  
+	 ConsultarUsuarioPorId(string idUsuario)
+	 
+	 ConsultarUsuarioPorLogin(string Login, string key)
+	 
+	 Exemplo método recebendo em JSon no web service. 
+	
+	 public string CadastroUsuario(string json)
+        {
+            Aluno aluno= JsonConvert.DeserializeObject<Aluno>(aluno);
+        }
+	
+     
+     Exemplo método recebendo em JSon no Windows Form. 
+	
+	 public string CadastroUsuario(string json)
+        {
+            Aluno aluno= JsonConvert.SerializeObject(usuario);
+        }
+--------------------------------------------------------------------------------------- 
+Tela - frmAdicionarUsuario
+
+Nome      - txtNome      - TextBox    - MaxLength 15
+Sobrenome - txtSobrenome - TextBox    - MaxLength 15
+Login     - txtLogin     - TextBox    - MaxLength 10
+Senha     - txtSenha     - TextBox    - MaxLength 15
+E-mail    - txtEmail     - TextBox    - MaxLength 25
+Sexo      - cmbSexo      - ComboBox
+Perfil    - cmbPerfil    - ComboBox
+Status    - cmbStatus    - ComboBox
+Salvar    - btnSalvar    - Button
+Foto      - BtnProcurarImagem
+          - PicBoxFoto   - PictureBox 
+
+
+
+
+----------------------------------------------------------------------------------
+ Script banco
+  
+   Nome banco Agenda.
+ 
+ 
+SELECT IDALUNO, NOME, STATUS, DTCADASTRO, OBS 
+FROM allpay.aluno;
+
+SELECT ID, NOME, SOBRENOME, LOGIN, SENHA, SEXO, STATUS, DTCADASTRO, NIVEL, EMAIL, FOTO 
+FROM allpay.usuario;
+
+SELECT * FROM USUARIO  WHERE LOGIN = 'MICHEL' AND SENHA = '123456';usuario
+
+INSERT INTO USUARIO
+(NOME, SOBRENOME, LOGIN, SENHA, SEXO, STATUS, DTCADASTRO, NIVEL, EMAIL, FOTO) 
+VALUES ('NOME', 'SOBRENOME', 'LOGIN', 'SENHA', 'SEXO', STATUS, 'DTCADASTRO', NIVEL, 'EMAIL', FOTO);
+
+ 
+ INSERT INTO USUARIO
+(NOME, SOBRENOME, LOGIN, SENHA, SEXO, STATUS, DTCADASTRO, NIVEL, EMAIL, FOTO) 
+VALUES ('Valter Junior', 'valter', 'valter', '123', 'M', 1, CURRENT_TIMESTAMP, 1, 'valter@gmail.com', NULL);
+
+
+SELECT * FROM USUARIO  WHERE LOGIN = 'MARIVAL';
+ 
+ 
+ --------------------------------------------------------------------------------------
+ 
+ Script banco
+  
+   Nome banco: agenda.
+  
+----------------- * Tabela usuario * -------------------------------------------------
+ 
+ CREATE TABLE `usuario` (
+  `IDUSUARIO` int(255) NOT NULL AUTO_INCREMENT,
+  `NOME` varchar(20) DEFAULT NULL,
+  `SOBRENOME` varchar(15) DEFAULT NULL,
+  `LOGIN` varchar(15) DEFAULT NULL,
+  `SENHA` varchar(15) DEFAULT NULL,
+  `SEXO` char(1) DEFAULT NULL,
+  `STATUS` int(1) DEFAULT NULL,
+  `DTCADASTRO` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `NIVEL` int(1) DEFAULT NULL,
+  `EMAIL` varchar(60) DEFAULT NULL,
+  `FOTO` blob,
+  PRIMARY KEY (`IDUSUARIO`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+----------------- * Tabela nivelacesso * -------------------------------------------------
+
+CREATE TABLE `nivelacesso` (
+  `ID` int(2) DEFAULT NULL,
+  `DESCRICAO` varchar(20) DEFAULT NULL,
+  `STATUS` int(1) DEFAULT NULL
+) 
+
+----------------- * Tabela logevento * --------------------------------------------------
+
+CREATE TABLE `logevento` (
+  `IDLOG` int(11) NOT NULL AUTO_INCREMENT,
+  `DESCRICAO` varchar(500) NOT NULL,
+  `DTEVENTO` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `STATUS` int(11) NOT NULL,
+  `IDUSUARIO` int(11) NOT NULL,
+  `NMUSUARIO` varchar(25),
+  PRIMARY KEY (`IDLOG`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+----------------- * Tabela agenda * -----------------------------------------------------
+ 
+ CREATE TABLE `contato` (
+  `IDCONTATO` int(11) NOT NULL AUTO_INCREMENT,
+  `IDUSUARIO` int(11) NOT NULL,
+  `NOME` varchar(100) NOT NULL,
+  `FONE` varchar(50) DEFAULT NULL,
+  `EMAIL` varchar(50) DEFAULT NULL,
+  `STATUS` int(1) DEFAULT NULL,
+  `DTCADASTRO` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`IDCONTATO`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ 

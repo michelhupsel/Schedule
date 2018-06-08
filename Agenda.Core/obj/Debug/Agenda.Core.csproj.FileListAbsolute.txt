@@ -1,0 +1,7 @@
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\bin\Debug\Agenda.Core.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\bin\Debug\Agenda.Core.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\obj\Debug\Agenda.Core.csprojResolveAssemblyReference.cache
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\obj\Debug\Agenda.Core.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\obj\Debug\Agenda.Core.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\bin\Debug\Agenda.Entity.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.Core\bin\Debug\Agenda.Entity.pdb

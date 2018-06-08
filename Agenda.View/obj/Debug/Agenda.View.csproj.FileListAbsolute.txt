@@ -1,0 +1,21 @@
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.View.exe.config
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.View.exe
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.View.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.csprojResolveAssemblyReference.cache
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.Properties.Resources.resources
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.csproj.GenerateResource.Cache
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.exe
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.FrmLogin.resources
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.Core.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.Entity.dll
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.Core.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\bin\Debug\Agenda.Entity.pdb
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.frmAdicionarUsuario.resources
+F:\projeto pessoal marivaldo\Projeto Estudo\Agenda\Agenda\Agenda.View\obj\Debug\Agenda.View.FrmPrincipal.resources
+C:\Users\Michel\Documents\Agenda\Agenda.View\bin\Debug\Agenda.View.exe.config
+C:\Users\Michel\Documents\Agenda\Agenda.View\obj\Debug\Agenda.View.exe
+C:\Users\Michel\Documents\Agenda\Agenda.View\obj\Debug\Agenda.View.pdb
+C:\Users\Michel\Documents\Schedule\Agenda.View\bin\Debug\Agenda.View.exe.config
+C:\Users\Michel\Documents\Schedule\Agenda.View\obj\Debug\Agenda.View.exe
+C:\Users\Michel\Documents\Schedule\Agenda.View\obj\Debug\Agenda.View.pdb
